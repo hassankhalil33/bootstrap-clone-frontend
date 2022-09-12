@@ -73,3 +73,33 @@ body {
     flex-direction: column;
     color: white;
 }
+.portfolio {
+    background-color: white;
+    color: #2C3E50;
+    margin: 5vh 5vw;
+    text-align: center;
+}
+
+.portfolio > h3 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.portfolio > img {
+    width: 2%;
+    margin: 2% auto;
+}
+
+.portfolio > div {
+    padding: 0 7vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portfolio > div > img {
+    width: 31%;
+    border-radius: 10px;
+    margin-bottom: 5vh;
+}
