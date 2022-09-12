@@ -59,12 +59,16 @@
             <h3>CONTACT ME</h3>
             <img src="images/icons8-christmas-star-50-blue.png" alt="blue star here">
             <div>
-                <input placeholder="Full Name" type="text">
-                <input placeholder="Email" type="text">
-                <input placeholder="Phone Number" type="text">
-                <input placeholder="Message" type="text">
+                <input class="name" placeholder="Full Name" type="text">
+                <div class="feedback-name"></div>
+                <input class="email" placeholder="Email" type="text">
+                <div class="feedback-email"></div>
+                <input class="phone" placeholder="Phone Number" type="text">
+                <div class="feedback-phone"></div>
+                <textarea class="message" placeholder="Message..." cols="30" rows="10"></textarea>
+                <div class="feedback-message"></div>
             </div>
-            <button>Send</button>
+            <button id="send">Send</button>
         </section>
         <section class="footer">
             <div>
@@ -84,5 +88,6 @@
         <section class="copyright">
             <h5>Copyright © Your Website 2022</h5>
         </section>
+        <script src="js/index.js"></script>
     </body>
 </html>
