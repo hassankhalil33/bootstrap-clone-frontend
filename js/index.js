@@ -16,22 +16,41 @@ const regPhone2 = /\+9617\d{7}$/;
 // Functions
 
 function validateInputFields () {
-    if (inputName.value.length < 5) {
-        feedbackName.textContent = "Name too short!";
-    } else {
+    var checker = 4;
+
+    if (inputName.value.length > 4) {
         feedbackName.textContent = "";
+        checker -= 1;
+    } else {
+        feedbackName.textContent = "Name too short!";
     };
 
     if (inputEmail.value.match(regEmail)) {
         feedbackEmail.textContent = "";
+        checker -= 1;
     } else {
-        feedbackEmail.textContent = "Invalid Email!";
+        feedbackEmail.textContent = "Invalid email!";
     };
 
     if (inputPhone.value.match(regPhone1) || inputPhone.value.match(regPhone2)) {
         feedbackPhone.textContent = "";
+        checker -= 1;
     } else {
-        feedbackPhone.textContent = "Invalid Phone Number!";
+        feedbackPhone.textContent = "Invalid phone number!";
+    };
+
+    if (inputMessage.value.length > 99) {
+        feedbackMessage.textContent = "";
+        checker -= 1;
+    } else {
+        feedbackMessage.textContent = "Message too short!";
+    };
+
+    if (checker === 0) { //Reset fields if all success
+        inputName.value = "";
+        inputEmail.value = "";
+        inputPhone.value = "";
+        inputMessage.value = "";
     };
 };
 
