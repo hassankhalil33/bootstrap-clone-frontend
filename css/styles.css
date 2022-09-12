@@ -1,4 +1,39 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* General Styling */
 
 body {
-    background-color: blue;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+.nav-bar {
+    height: 13vh;
+    background-color: #2C3E50;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    align-items: center;
+    padding: 0 12vw;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.links > li {
+    margin-right: 2vw;
 }
