@@ -37,3 +37,39 @@ body {
 .links > li {
     margin-right: 2vw;
 }
+
+.hero {
+    background-color: #1ABC9C;
+    height: 87vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero > div > img:first-child {
+    width: 30%;
+}
+
+.hero > div > img:last-of-type {
+    width: 4%;
+}
+
+.hero > div > h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.hero > div > h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hero > div {
+    height: 60vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    color: white;
+}
