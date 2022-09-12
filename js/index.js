@@ -10,6 +10,8 @@ const feedbackEmail = document.querySelector(".feedback-email");
 const feedbackPhone = document.querySelector(".feedback-phone");
 const feedbackMessage = document.querySelector(".feedback-message");
 const regEmail = /.....@.../;
+const regPhone1 = /\+9613\d{6}$/;
+const regPhone2 = /\+9617\d{7}$/;
 
 // Functions
 
@@ -20,10 +22,16 @@ function validateInputFields () {
         feedbackName.textContent = "";
     };
 
-    if ((inputEmail.value).match(regEmail)) {
+    if (inputEmail.value.match(regEmail)) {
         feedbackEmail.textContent = "";
     } else {
         feedbackEmail.textContent = "Invalid Email!";
+    };
+
+    if (inputPhone.value.match(regPhone1) || inputPhone.value.match(regPhone2)) {
+        feedbackPhone.textContent = "";
+    } else {
+        feedbackPhone.textContent = "Invalid Phone Number!";
     };
 };
 
