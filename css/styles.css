@@ -103,3 +103,49 @@ body {
     border-radius: 10px;
     margin-bottom: 5vh;
 }
+
+.about {
+    background-color: #1ABC9C;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 10vh 20vw;
+}
+
+.about > h3 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.about > img {
+    width: 4%;
+    margin: 2% auto;
+}
+
+.about > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 0;
+    font-size: 1rem;
+}
+
+.about > div > p {
+    margin: 0 5%;
+    font-size: 1.5rem;
+}
+
+.about > button {
+    background: #1ABC9C;
+    text-align: center;
+    height: 8vh;
+    width: 16vw;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+}
