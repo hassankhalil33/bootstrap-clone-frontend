@@ -1,1 +1,1 @@
-# bootstrap-clone-frontend
+Bootstrap Clone Frontend Only
