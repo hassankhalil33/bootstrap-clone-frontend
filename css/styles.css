@@ -331,8 +331,11 @@ body {
 @media only screen and (max-width: 767px) {
 
     .nav-bar {
-        padding: 0 1vw;
-        font: 14px;
+        padding: 0 2vw;
+    }
+
+    .nav-bar > div > h3 {
+        font-size: 20px;
     }
 
     .hero > div {
