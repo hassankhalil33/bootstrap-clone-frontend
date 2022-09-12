@@ -73,6 +73,7 @@ body {
     flex-direction: column;
     color: white;
 }
+
 .portfolio {
     background-color: white;
     color: #2C3E50;
@@ -148,4 +149,51 @@ body {
     border: 2px solid white;
     box-sizing: border-box;
     font-size: 1.5rem;
+}
+
+.contact-me {
+    background-color: white;
+    color: #2C3E50;
+    margin: 10vh 10vw;
+    text-align: center;
+}
+
+.contact-me > h3 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.contact-me > img {
+    width: 2%;
+    margin: 2% auto;
+}
+
+.contact-me > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+}
+
+.contact-me > div > input {
+    border: 1px gray;
+    border-style: none none solid none;
+    width: 45vw;
+    height: 5vh;
+    font-size: 1.5rem;
+}
+
+.contact-me > button {
+    margin-top: 5vh;
+    background: #6BD4BF;
+    text-align: center;
+    height: 5vh;
+    width: 10vw;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    border: none;
 }
